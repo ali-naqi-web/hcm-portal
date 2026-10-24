@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCM Lite - Dashboard</title>
+    <!-- Google Fonts & Bootstrap Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Single External Stylesheet -->
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logosec">
+            <img class="logo-img" src="https://i.pinimg.com/736x/7b/26/78/7b2678ebab94467df19d47895624aa8e.jpg" alt="HCM Lite Logo">
+            
+        </div>
+
+        <div class="searchbar">
+            <input type="text" placeholder="Search..." />
+            <div class="searchbtn">
+                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210180758/Untitled-design-(28).png" class="icn srchicn" alt="search-icon" />
+            </div>
+        </div>
+
+        <div class="message">
+            <div class="circle"></div>
+            <img src="https://i.pinimg.com/736x/7b/26/78/7b2678ebab94467df19d47895624aa8e.jpg" alt="Profile Logo" class="logo-img">
+        </div>
+    </header>
+
+    <div class="main-container">
+        <!-- Sidebar Navigation -->
+        <div class="navcontainer">
+            <nav class="nav">
+                <div class="nav-upper-options">
+                    <div class="nav-upper-options">
+                 <a href="./dashbard.html" style="text-decoration: none;"><div class="nav-option option1 active" >
+                        <img src="https://cdn-icons-png.flaticon.com/512/1828/1828765.png" class="nav-img" alt="dashboard" />
+                        <h3>Dashboard</h3>
+                    </div></a>
+
+                    <a href="./dashbard.html" class="nav-option">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183322/9.png" class="nav-img" alt="articles" />
+                        <h3>Articles</h3>
+                    </a>
+
+                    <a href="./dashbard.html" class="nav-option">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183320/5.png" class="nav-img" alt="report" />
+                        <h3>Report</h3>
+                    </a>
+
+                    <a href="./dashbard.html" class="nav-option">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183321/6.png" class="nav-img" alt="institution" />
+                        <h3>Institution</h3>
+                    </a>
+
+                    <a href="./employee management.html" class="nav-option">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183323/10.png" class="nav-img" alt="profile" />
+                        <h3>Profile</h3>
+                    </a>
+
+                    <a href="./employee management.html" class="nav-option">
+                        <i class="bi bi-people text-secondary" style="font-size: 1.1rem;"></i>
+                        <h3>Employee Management</h3>
+                    </a>
+                    <a href="./leves.html" style="text-decoration: none;">
+                        <div class="nav-option option6" data-target="settings-view">
+                            <i class="bi bi-people text-secondary" style="font-size: 1.1rem;"></i>
+                            <h3>leaves</h3></a>
+                        <a href="./admin.html" style="text-decoration: none;">
+                        <div class="nav-option option6" data-target="settings-view">
+                            <i class="bi bi-people text-secondary" style="font-size: 1.1rem;"></i>
+                            <h3>Admin</h3>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Main Content Area -->
+        <div class="main">
+            <div class="searchbar2">
+                <input type="text" placeholder="Search..." />
+                <div class="searchbtn">
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210180758/Untitled-design-(28).png" class="icn srchicn" alt="search-button" />
+                </div>
+            </div>
+
+            <!-- Dashboard View Section -->
+            <div id="dashboard-view" class="view-section active-view">
+                <div class="box-container">
+                    <div class="box box1">
+                        <div class="text">
+                            <h2 class="topic-heading">60.5k</h2>
+                            <h2 class="topic">Article Views</h2>
+                        </div>
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210184645/Untitled-design-(31).png" alt="Views" />
+                    </div>
+
+                    <div class="box box2">
+                        <div class="text">
+                            <h2 class="topic-heading">150</h2>
+                            <h2 class="topic">Likes</h2>
+                        </div>
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210185030/14.png" alt="likes" />
+                    </div>
+
+                    <div class="box box3">
+                        <div class="text">
+                            <h2 class="topic-heading">320</h2>
+                            <h2 class="topic">Comments</h2>
+                        </div>
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210184645/Untitled-design-(32).png" alt="comments" />
+                    </div>
+
+                    <div class="box box4">
+                        <div class="text">
+                            <h2 class="topic-heading">70</h2>
+                            <h2 class="topic">Published</h2>
+                        </div>
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210185029/13.png" alt="published" />
+                    </div>
+                </div>
+
+                <div class="report-container">
+                    <div class="report-header">
+                        <h1 class="recent-Articles">Recent Articles</h1>
+                        <button class="view">View All</button>
+                    </div>
+
+                    <div class="report-body">
+                        <div class="report-topic-heading">
+                            <h3 class="t-op">Article</h3>
+                            <h3 class="t-op">Views</h3>
+                            <h3 class="t-op">Comments</h3>
+                            <h3 class="t-op">Status</h3>
+                        </div>
+
+                        <div class="items">
+                            <div class="item1">
+                                <h3 class="t-op-nextlvl">Article 73</h3>
+                                <h3 class="t-op-nextlvl">2.9k</h3>
+                                <h3 class="t-op-nextlvl">210</h3>
+                                <h3 class="t-op-nextlvl label-tag">Published</h3>
+                            </div>
+                            <div class="item1">
+                                <h3 class="t-op-nextlvl">Article 72</h3>
+                                <h3 class="t-op-nextlvl">1.5k</h3>
+                                <h3 class="t-op-nextlvl">360</h3>
+                                <h3 class="t-op-nextlvl label-tag">Published</h3>
+                            </div>
+                            <div class="item1">
+                                <h3 class="t-op-nextlvl">Article 71</h3>
+                                <h3 class="t-op-nextlvl">1.1k</h3>
+                                <h3 class="t-op-nextlvl">150</h3>
+                                <h3 class="t-op-nextlvl label-tag">Published</h3>
+                            </div>
+                            <div class="item1">
+                                <h3 class="t-op-nextlvl">Article 70</h3>
+                                <h3 class="t-op-nextlvl">1.2k</h3>
+                                <h3 class="t-op-nextlvl">420</h3>
+                                <h3 class="t-op-nextlvl label-tag">Published</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="fug" href="./index.html" style="text-decoration: none;">
+                    <button >
+                        
+                        <h2><img style="height: 30px; width: 30px;" src="https://cdn-icons-png.flaticon.com/512/5565/5565683.png" alt=""> Logout</h2> </button>
+                </a>
+        
+            </div>
+            
+    </div>
+    
+</body>
+
+</html>

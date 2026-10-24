@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCM Lite - Admin Dashboard</title>
+    <!-- Google Font & Bootstrap 5 CSS & Bootstrap Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link rel="stylesheet" href="5.css">
+   </head>
+
+<body>
+    <!-- Top Header Navigation -->
+    <header>
+        <div class="logosec">
+            <img class="logo-img" src="https://i.pinimg.com/736x/7b/26/78/7b2678ebab94467df19d47895624aa8e.jpg" alt="HCM Lite Logo">
+        </div>
+
+        <div class="searchbar">
+            <input type="text" placeholder="Search system logs, employees..." />
+            <i class="bi bi-search text-secondary ms-2"></i>
+        </div>
+
+        <div class="d-flex align-items-center gap-3">
+            <div class="text-end d-none d-sm-block">
+                <div class="fw-semibold small text-white">Super Admin</div>
+                <div class="text-secondary small" style="font-size: 0.75rem;">admin@company.com</div>
+            </div>
+            <img src="https://i.pinimg.com/736x/7b/26/78/7b2678ebab94467df19d47895624aa8e.jpg" alt="Admin Avatar" class="logo-img">
+        </div>
+    </header>
+
+    <div class="main-container">
+        <!-- Sidebar Navigation -->
+        <div class="navcontainer">
+            <nav class="nav">
+                <a href="./admin.html" class="nav-option active">
+                    <i class="bi bi-shield-lock fs-5"></i>
+                    <h3>Admin Dashboard</h3>
+                </a>
+                <a href="./employee management.html" class="nav-option">
+                    <i class="bi bi-people fs-5"></i>
+                    <h3>Employees</h3>
+                </a>
+                <a href="./leves.html" class="nav-option">
+                    <i class="bi bi-calendar-event fs-5"></i>
+                    <h3>Leave Requests</h3>
+                </a>
+                <a href="./dashbard.html" class="nav-option">
+                    <i class="bi bi-bar-chart fs-5"></i>
+                    <h3>Reports</h3>
+                </a>
+                <a href="./index.html" class="nav-option text-danger mt-4">
+                    <i class="bi bi-box-arrow-right fs-5"></i>
+                    <h3>Logout →</h3>
+                </a>
+            </nav>
+        </div>
+
+        <!-- Main Body Area -->
+        <div class="main">
+            <!-- Header CTA Bar -->
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <div>
+                    <h4 class="fw-bold mb-0 text-white">System Administration</h4>
+                    <p class="text-secondary small m-0">Monitor system status, user activity, and admin settings.</p>
+                </div>
+                <!-- Bootstrap Modal Trigger Button -->
+                <button class="btn-emerald" data-bs-toggle="modal" data-bs-target="#adminActionModal">
+                    <i class="bi bi-gear-fill"></i> Admin Actions
+                </button>
+            </div>
+
+            <!-- Metric Overview Cards -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div>
+                        <div class="stat-value">128</div>
+                        <div class="stat-label">Total Accounts</div>
+                    </div>
+                    <div class="stat-icon total"><i class="bi bi-people"></i></div>
+                </div>
+                <div class="stat-card">
+                    <div>
+                        <div class="stat-value">94.2%</div>
+                        <div class="stat-label">System Health</div>
+                    </div>
+                    <div class="stat-icon active"><i class="bi bi-cpu"></i></div>
+                </div>
+                <div class="stat-card">
+                    <div>
+                        <div class="stat-value">14</div>
+                        <div class="stat-label">Pending Requests</div>
+                    </div>
+                    <div class="stat-icon leave"><i class="bi bi-clock-history"></i></div>
+                </div>
+                <div class="stat-card">
+                    <div>
+                        <div class="stat-value">99.9%</div>
+                        <div class="stat-label">Server Uptime</div>
+                    </div>
+                    <div class="stat-icon system"><i class="bi bi-hdd-network"></i></div>
+                </div>
+            </div>
+
+            <!-- Grid Layout for Tables & Status Cards -->
+            <div class="row g-3">
+                <!-- System Log Activity -->
+                <div class="col-lg-8">
+                    <div class="report-container h-100 mb-0">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h6 class="fw-bold m-0 text-white">Recent Audit Logs</h6>
+                            <button class="btn btn-sm btn-outline-secondary">View All Logs</button>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-dark table-hover align-middle mb-0">
+                                <thead>
+                                    <tr class="text-secondary border-bottom border-secondary">
+                                        <th>Admin/User</th>
+                                        <th>Action Executed</th>
+                                        <th>IP Address</th>
+                                        <th>Time</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><span class="fw-semibold">Admin (hr@company.com)</span></td>
+                                        <td>Added Employee: Alex Johnson</td>
+                                        <td class="text-secondary small">192.168.1.45</td>
+                                        <td class="text-secondary small">10 mins ago</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="fw-semibold">Alex Johnson</span></td>
+                                        <td>Submitted Casual Leave</td>
+                                        <td class="text-secondary small">192.168.1.88</td>
+                                        <td class="text-secondary small">1 hour ago</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="fw-semibold">Admin (hr@company.com)</span></td>
+                                        <td>Approved Leave Request #104</td>
+                                        <td class="text-secondary small">192.168.1.45</td>
+                                        <td class="text-secondary small">2 hours ago</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="fw-semibold">System Bot</span></td>
+                                        <td>Automated Nightly Backup Completed</td>
+                                        <td class="text-secondary small">127.0.0.1</td>
+                                        <td class="text-secondary small">02:00 AM</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Server & System Health Card -->
+                <div class="col-lg-4">
+                    <div class="report-container h-100 mb-0">
+                        <h6 class="fw-bold mb-3 text-white">Services Status</h6>
+                        <ul class="list-group list-group-flush bg-transparent">
+                            <li class="list-group-item bg-transparent text-white border-secondary d-flex justify-content-between align-items-center px-0">
+                                <div>
+                                    <div class="fw-semibold small">Database Server</div>
+                                    <div class="text-secondary style-sub text-muted" style="font-size: 0.75rem;">PostgreSQL 15.2</div>
+                                </div>
+                                <span class="badge-status badge-online">Operational</span>
+                            </li>
+                            <li class="list-group-item bg-transparent text-white border-secondary d-flex justify-content-between align-items-center px-0">
+                                <div>
+                                    <div class="fw-semibold small">Auth Service</div>
+                                    <div class="text-secondary style-sub text-muted" style="font-size: 0.75rem;">OAuth 2.0 / JWT</div>
+                                </div>
+                                <span class="badge-status badge-online">Operational</span>
+                            </li>
+                            <li class="list-group-item bg-transparent text-white border-secondary d-flex justify-content-between align-items-center px-0">
+                                <div>
+                                    <div class="fw-semibold small">Email Notifications</div>
+                                    <div class="text-secondary style-sub text-muted" style="font-size: 0.75rem;">SMTP Relay</div>
+                                </div>
+                                <span class="badge-status badge-warning">High Load</span>
+                            </li>
+                            <li class="list-group-item bg-transparent text-white border-0 d-flex justify-content-between align-items-center px-0">
+                                <div>
+                                    <div class="fw-semibold small">File Storage</div>
+                                    <div class="text-secondary style-sub text-muted" style="font-size: 0.75rem;">S3 Storage Bucket</div>
+                                </div>
+                                <span class="badge-status badge-online">Operational</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Admin Actions Modal -->
+    <div class="modal fade" id="adminActionModal" tabindex="-1" aria-labelledby="adminActionModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark text-white border border-secondary">
+                <div class="modal-header border-bottom border-secondary py-2">
+                    <h6 class="modal-title fw-bold" id="adminActionModalLabel">Quick Admin Operations</h6>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label small text-secondary">Select Operation</label>
+                            <select class="form-select form-select-sm bg-black text-white border-secondary">
+                                <option>Export Employee Directory (CSV)</option>
+                                <option>Purge Old System Logs</option>
+                                <option>Trigger Manual System Backup</option>
+                                <option>Send System Announcement Notification</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label small text-secondary">Notes / Comments</label>
+                            <textarea class="form-control form-control-sm bg-black text-white border-secondary" rows="3" placeholder="Add optional admin log notes..."></textarea>
+                        </div>
+                        <div class="d-flex justify-content-end gap-2">
+                            <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+                            <button type="submit" class="btn-emerald">Execute Operation</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 Bundle JS (Includes Popper for Modals) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
