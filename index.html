@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCM Lite - Login</title>
+    <link 
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+      rel="stylesheet"
+    >
+    <link 
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" 
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body class="d-flex align-items-center justify-content-center p-3">
+
+  <div class="card login-card p-4 p-sm-5">
+    
+    <!-- Logo Header -->
+    <div class="text-center mb-4">
+      <div class="logo-wrapper mb-3">
+        <img 
+          src="https://s.yimg.com/fz/api/res/1.2/WrvxtaUQTYZZm7QDjJFKgw--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpbGw7aD00MTI7cHhvZmY9NTA7cHlvZmY9MTAwO3E9ODA7c3M9MTt3PTM4OA--/https://i.pinimg.com/736x/7b/26/78/7b2678ebab94467df19d47895624aa8e.jpg" 
+          alt="HCM Lite Logo" 
+          class="logo-img"
+        >
+      </div>
+      <h3 class="fw-bold text-white m-0">HCM Lite</h3>
+      <p class="text-secondary small mt-1">Sign in to manage your workplace</p>
+    </div>
+
+    <!-- Set form action to redirect on submit -->
+    <form action="dashbard.html" method="GET">
+      
+      <div class="mb-4">
+        <label class="form-label small text-uppercase text-secondary fw-semibold mb-2 d-block text-center">Select Role</label>
+        <div class="btn-group w-100" role="group" aria-label="Role selector">
+          <input type="radio" class="btn-check" name="role" id="role-employee" value="employee" checked>
+          <label class="btn btn-outline-emerald btn-sm py-2" for="role-employee">
+            <i class="bi bi-person me-1"></i> Employee
+          </label>
+
+          <input type="radio" class="btn-check" name="role" id="role-hr" value="hr">
+          <label class="btn btn-outline-emerald btn-sm py-2" for="role-hr">
+            <i class="bi bi-people me-1"></i> HR
+          </label>
+
+          <input type="radio" class="btn-check" name="role" id="role-admin" value="admin">
+          <label class="btn btn-outline-emerald btn-sm py-2" for="role-admin">
+            <i class="bi bi-shield-lock me-1"></i> Admin
+          </label>
+        </div>
+      </div>
+
+      <div class="form-floating mb-3">
+        <input 
+          type="email" 
+          class="form-control"
+          id="floatingEmail"
+          placeholder="name@company.com"
+          required
+        >
+        <label for="floatingEmail">Email address</label>
+      </div>
+
+      <div class="form-floating mb-3">
+        <input 
+          type="password" 
+          class="form-control"
+          id="floatingPassword"
+          placeholder="Password"
+          required
+        >
+        <label for="floatingPassword">Password</label>
+      </div>
+
+      <div class="d-flex justify-content-between align-items-center mb-4 small">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="rememberMe">
+          <label class="form-check-label text-secondary" for="rememberMe">
+            Remember me
+          </label>
+        </div>
+        <a href="#" class="link-emerald fw-medium">Forgot password?</a>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="btn btn-emerald w-100 mb-3">
+        Sign In <i class="bi bi-arrow-right-short ms-1 fs-5 align-middle"></i>
+      </button>
+
+    </form>
+
+    <div class="text-center text-secondary small mt-3 border-top border-secondary border-opacity-25 pt-3">
+      Powered by Saylani IT &bull; Hackathon Edition
+    </div>
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
